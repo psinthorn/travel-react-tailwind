@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --primary-dark: #5651e5;
+    --primary-light: #709dff;
+}
+
+.icon {
+    /* color: var(--primary-dark) */
+}
+
+@layer base {
+    body {
+        @apply font-[Poppins]
+    }
+    li {
+        @apply px-4 text-xl border-b rounded-md  left-[-100%] hover:bg-blue-700 hover:text-white
+    }
+    h1 {
+        @apply text-3xl md:text-4xl font-bold
+    }
+    h2 {
+        @apply text-3xl font-bold
+    }
+    h3 {
+        @apply text-xl
+    }
+    button {
+        @apply p-3 border bg-gradient-to-r from-[var(--primary-dark)] to-[var(--primary-light)] rounded-md text-white
+    }
+    .icon {
+        @apply text-2xl cursor-pointer
+    }
+}
