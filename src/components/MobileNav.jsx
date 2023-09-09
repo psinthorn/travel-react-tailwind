@@ -16,9 +16,9 @@ export const MobileNav = () => {
             {isMobile ? <BiMenu/> : <BiCollapse/> }    
         </div>
         <div onClick={showMobileMenu} className={isMobile ?  "flex flex-col absolute w-full top-[-100%] left-0 px-4 py-8 bg-gray-100/90" : "flex flex-col absolute w-full top-0 left-[0] px-4 py-8 bg-gray-100/90"}>
-                <ul className=''>
+                <ul className='mt-10'>
                     {/* <h1 onClick={showMobileMenu} >BEACH.</h1> */}
-                    <li onClick={showMobileMenu}>Home</li>
+                    <li>Home</li>
                     <li>Destinations</li>
                     <li>Ticket</li>
                     <li>Book Now</li>
