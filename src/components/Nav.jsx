@@ -1,6 +1,7 @@
-// import { BsPerson } from 'react-icons/bs';
-// import { BiSearch } from 'react-icons/bi';
+import { BsPerson } from 'react-icons/bs';
+import { BiSearch } from 'react-icons/bi';
 // import { AiOutlineClose } from 'ract-icons/ai'
+
 
 import { useState } from "react"
 import { MobileNav } from "./MobileNav"
@@ -22,7 +23,8 @@ const Nav = () => {
                 <li>Contact</li>
             </ul>
             <div className="hidden md:flex">
-                User
+                <BiSearch/>
+                <BsPerson />
             </div>
             <MobileNav />
         </nav>
